@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		338AB84C27B2F39000EA41E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338AB84B27B2F39000EA41E5 /* AppDelegate.swift */; };
 		338AB84E27B2F39000EA41E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338AB84D27B2F39000EA41E5 /* SceneDelegate.swift */; };
-		338AB85027B2F39000EA41E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338AB84F27B2F39000EA41E5 /* ViewController.swift */; };
 		338AB85327B2F39000EA41E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338AB85127B2F39000EA41E5 /* Main.storyboard */; };
 		338AB85527B2F39100EA41E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338AB85427B2F39100EA41E5 /* Assets.xcassets */; };
 		338AB85827B2F39100EA41E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338AB85627B2F39100EA41E5 /* LaunchScreen.storyboard */; };
+		338AB86027B2FAFE00EA41E5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338AB85F27B2FAFE00EA41E5 /* LogInViewController.swift */; };
+		338AB86227B3018500EA41E5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338AB86127B3018500EA41E5 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		338AB84827B2F39000EA41E5 /* Employees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Employees.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338AB84B27B2F39000EA41E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		338AB84D27B2F39000EA41E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		338AB84F27B2F39000EA41E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		338AB85227B2F39000EA41E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		338AB85427B2F39100EA41E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		338AB85727B2F39100EA41E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		338AB85927B2F39100EA41E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		338AB85F27B2FAFE00EA41E5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		338AB86127B3018500EA41E5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				338AB84B27B2F39000EA41E5 /* AppDelegate.swift */,
 				338AB84D27B2F39000EA41E5 /* SceneDelegate.swift */,
-				338AB84F27B2F39000EA41E5 /* ViewController.swift */,
 				338AB85127B2F39000EA41E5 /* Main.storyboard */,
 				338AB85427B2F39100EA41E5 /* Assets.xcassets */,
 				338AB85627B2F39100EA41E5 /* LaunchScreen.storyboard */,
 				338AB85927B2F39100EA41E5 /* Info.plist */,
+				338AB85F27B2FAFE00EA41E5 /* LogInViewController.swift */,
+				338AB86127B3018500EA41E5 /* RegisterViewController.swift */,
 			);
 			path = Employees;
 			sourceTree = "<group>";
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				338AB85027B2F39000EA41E5 /* ViewController.swift in Sources */,
+				338AB86027B2FAFE00EA41E5 /* LogInViewController.swift in Sources */,
 				338AB84C27B2F39000EA41E5 /* AppDelegate.swift in Sources */,
 				338AB84E27B2F39000EA41E5 /* SceneDelegate.swift in Sources */,
+				338AB86227B3018500EA41E5 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
