@@ -2,12 +2,15 @@ import Foundation
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Register"
+        self.title = "Profile"
         
+
     }
+
+
 }
