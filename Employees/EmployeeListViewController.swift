@@ -6,7 +6,7 @@ class EmployeeListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "List"
+        self.navigationItem.title = "List"
 
                 
     }

@@ -6,7 +6,7 @@ class RecoverPasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Password"
+        self.navigationItem.title = "Password"
 
                 
     }
