@@ -10,6 +10,10 @@
 		337D421027B59B90005195A0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D420F27B59B90005195A0 /* RegisterViewController.swift */; };
 		337D421227B59BB1005195A0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D421127B59BB1005195A0 /* ProfileViewController.swift */; };
 		337D421427B59F8A005195A0 /* RecoverPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D421327B59F8A005195A0 /* RecoverPasswordViewController.swift */; };
+		33855F8327C403FD009134B5 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33855F8227C403FD009134B5 /* EmployeeCell.swift */; };
+		33855F8527C41B69009134B5 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33855F8427C41B69009134B5 /* Connection.swift */; };
+		33855F8727C41B79009134B5 /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33855F8627C41B79009134B5 /* DataMapper.swift */; };
+		33855F8927C41B83009134B5 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33855F8827C41B83009134B5 /* AppData.swift */; };
 		338AB84C27B2F39000EA41E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338AB84B27B2F39000EA41E5 /* AppDelegate.swift */; };
 		338AB84E27B2F39000EA41E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338AB84D27B2F39000EA41E5 /* SceneDelegate.swift */; };
 		338AB85327B2F39000EA41E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338AB85127B2F39000EA41E5 /* Main.storyboard */; };
@@ -23,6 +27,10 @@
 		337D420F27B59B90005195A0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		337D421127B59BB1005195A0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		337D421327B59F8A005195A0 /* RecoverPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewController.swift; sourceTree = "<group>"; };
+		33855F8227C403FD009134B5 /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		33855F8427C41B69009134B5 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		33855F8627C41B79009134B5 /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
+		33855F8827C41B83009134B5 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		338AB84827B2F39000EA41E5 /* Employees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Employees.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338AB84B27B2F39000EA41E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		338AB84D27B2F39000EA41E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33855F7B27C3ED79009134B5 /* Data layer */ = {
+			isa = PBXGroup;
+			children = (
+				33855F7F27C3EDB2009134B5 /* Network */,
+				33855F7C27C3ED81009134B5 /* Models */,
+			);
+			path = "Data layer";
+			sourceTree = "<group>";
+		};
+		33855F7C27C3ED81009134B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33855F8127C403E4009134B5 /* Cells */,
+				33855F8027C403D8009134B5 /* UserPreferences */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		33855F7F27C3EDB2009134B5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				33855F8427C41B69009134B5 /* Connection.swift */,
+				33855F8627C41B79009134B5 /* DataMapper.swift */,
+				33855F8827C41B83009134B5 /* AppData.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		33855F8027C403D8009134B5 /* UserPreferences */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserPreferences;
+			sourceTree = "<group>";
+		};
+		33855F8127C403E4009134B5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				33855F8227C403FD009134B5 /* EmployeeCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		338AB83F27B2F39000EA41E5 = {
 			isa = PBXGroup;
 			children = (
@@ -64,19 +115,28 @@
 		338AB84A27B2F39000EA41E5 /* Employees */ = {
 			isa = PBXGroup;
 			children = (
+				33855F7B27C3ED79009134B5 /* Data layer */,
+				33982AD127C00071009DE9D8 /* ViewControllers */,
 				338AB84B27B2F39000EA41E5 /* AppDelegate.swift */,
 				338AB84D27B2F39000EA41E5 /* SceneDelegate.swift */,
 				338AB85127B2F39000EA41E5 /* Main.storyboard */,
-				337D421327B59F8A005195A0 /* RecoverPasswordViewController.swift */,
 				338AB85427B2F39100EA41E5 /* Assets.xcassets */,
 				338AB85627B2F39100EA41E5 /* LaunchScreen.storyboard */,
 				338AB85927B2F39100EA41E5 /* Info.plist */,
+			);
+			path = Employees;
+			sourceTree = "<group>";
+		};
+		33982AD127C00071009DE9D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				337D421327B59F8A005195A0 /* RecoverPasswordViewController.swift */,
 				338AB85F27B2FAFE00EA41E5 /* LogInViewController.swift */,
 				338AB86127B3018500EA41E5 /* EmployeeListViewController.swift */,
 				337D420F27B59B90005195A0 /* RegisterViewController.swift */,
 				337D421127B59BB1005195A0 /* ProfileViewController.swift */,
 			);
-			path = Employees;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +210,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				338AB86027B2FAFE00EA41E5 /* LogInViewController.swift in Sources */,
+				33855F8527C41B69009134B5 /* Connection.swift in Sources */,
 				338AB84C27B2F39000EA41E5 /* AppDelegate.swift in Sources */,
 				338AB84E27B2F39000EA41E5 /* SceneDelegate.swift in Sources */,
+				33855F8927C41B83009134B5 /* AppData.swift in Sources */,
+				33855F8327C403FD009134B5 /* EmployeeCell.swift in Sources */,
 				337D421027B59B90005195A0 /* RegisterViewController.swift in Sources */,
+				33855F8727C41B79009134B5 /* DataMapper.swift in Sources */,
 				337D421427B59F8A005195A0 /* RecoverPasswordViewController.swift in Sources */,
 				337D421227B59BB1005195A0 /* ProfileViewController.swift in Sources */,
 				338AB86227B3018500EA41E5 /* EmployeeListViewController.swift in Sources */,
