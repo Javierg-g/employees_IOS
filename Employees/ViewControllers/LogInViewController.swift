@@ -17,8 +17,7 @@ class LogInViewController: UIViewController {
         
         
         usernameEditText.addTarget(self, action: #selector(LogInViewController.textFieldDidChange(_:)), for: .editingChanged)
-        
-        
+
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {

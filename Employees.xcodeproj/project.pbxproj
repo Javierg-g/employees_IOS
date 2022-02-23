@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331FFD5327C68AB5000AB65D /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331FFD5227C68AB5000AB65D /* Employee.swift */; };
+		331FFD5527C69085000AB65D /* DetailEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331FFD5427C69085000AB65D /* DetailEmployeeViewController.swift */; };
+		331FFD5727C6A993000AB65D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331FFD5627C6A993000AB65D /* Response.swift */; };
 		337D421027B59B90005195A0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D420F27B59B90005195A0 /* RegisterViewController.swift */; };
 		337D421227B59BB1005195A0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D421127B59BB1005195A0 /* ProfileViewController.swift */; };
 		337D421427B59F8A005195A0 /* RecoverPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D421327B59F8A005195A0 /* RecoverPasswordViewController.swift */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		331FFD5227C68AB5000AB65D /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		331FFD5427C69085000AB65D /* DetailEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEmployeeViewController.swift; sourceTree = "<group>"; };
+		331FFD5627C6A993000AB65D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		337D420F27B59B90005195A0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		337D421127B59BB1005195A0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		337D421327B59F8A005195A0 /* RecoverPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +71,8 @@
 		33855F7C27C3ED81009134B5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				331FFD5227C68AB5000AB65D /* Employee.swift */,
+				331FFD5627C6A993000AB65D /* Response.swift */,
 				33855F8127C403E4009134B5 /* Cells */,
 				33855F8027C403D8009134B5 /* UserPreferences */,
 			);
@@ -135,6 +143,7 @@
 				338AB86127B3018500EA41E5 /* EmployeeListViewController.swift */,
 				337D420F27B59B90005195A0 /* RegisterViewController.swift */,
 				337D421127B59BB1005195A0 /* ProfileViewController.swift */,
+				331FFD5427C69085000AB65D /* DetailEmployeeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -209,10 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				331FFD5527C69085000AB65D /* DetailEmployeeViewController.swift in Sources */,
 				338AB86027B2FAFE00EA41E5 /* LogInViewController.swift in Sources */,
+				331FFD5327C68AB5000AB65D /* Employee.swift in Sources */,
 				33855F8527C41B69009134B5 /* Connection.swift in Sources */,
 				338AB84C27B2F39000EA41E5 /* AppDelegate.swift in Sources */,
 				338AB84E27B2F39000EA41E5 /* SceneDelegate.swift in Sources */,
+				331FFD5727C6A993000AB65D /* Response.swift in Sources */,
 				33855F8927C41B83009134B5 /* AppData.swift in Sources */,
 				33855F8327C403FD009134B5 /* EmployeeCell.swift in Sources */,
 				337D421027B59B90005195A0 /* RegisterViewController.swift in Sources */,

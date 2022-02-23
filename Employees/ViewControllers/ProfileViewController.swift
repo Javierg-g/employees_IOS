@@ -2,8 +2,6 @@ import Foundation
 import UIKit
 import AVFoundation
 
-
-
 class ProfileViewController: UIViewController,UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     @IBOutlet var nameEditText: UITextField!
@@ -12,7 +10,7 @@ class ProfileViewController: UIViewController,UIImagePickerControllerDelegate & 
     @IBOutlet var salaryEditText: UITextField!
     @IBOutlet var signOutButton: UIButton!
     
-    @IBOutlet var imageProfile: UIImageView!
+    @IBOutlet var profilePic: UIImageView!
     let picker = UIImagePickerController()
     
     override func viewDidLoad() {
@@ -28,7 +26,7 @@ class ProfileViewController: UIViewController,UIImagePickerControllerDelegate & 
         let alertController = UIAlertController(title: "Aviso", message: "Va a cerrar sesión", preferredStyle: .alert)
         
         let closeAction = UIAlertAction(title: "Cancelar", style: .default, handler: { _ in NSLog("The \"cancel\" alert occured.")
-                        
+            
             self.dismiss(animated: true, completion: nil)
         })
         
@@ -36,17 +34,25 @@ class ProfileViewController: UIViewController,UIImagePickerControllerDelegate & 
             if let loginVC = self.storyboard?.instantiateViewController(identifier: "LoginVC"){
                 loginVC.modalPresentationStyle = .fullScreen
                 self.present(loginVC, animated: true, completion: nil)
-
+                
             }
-                        
+            
         })
         
         alertController.addAction(closeAction)
         alertController.addAction(cancelAction)
-
+        
         present(alertController, animated: true, completion: nil)
         
+        /*
+         - Cierre de mensaje de alerta tras un tiempo determinado -
+         let when = DispatchTime.now() + 5
+         DispatchQueue.main.asyncAfter(deadline: when){
+         alertController.dismiss(animated: true, completion: nil)
+         }*/
+        
     }
+    
     @IBAction func buttonImageTapped(){
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let camara = UIAlertAction(title: "Hacer foto", style: .default, handler: {(action) in
@@ -68,7 +74,7 @@ class ProfileViewController: UIViewController,UIImagePickerControllerDelegate & 
         alertController.addAction(camara)
         alertController.addAction(galeria)
         alertController.addAction(cancelar)
-
+        
         self.present(alertController, animated: true, completion: nil)
         
     }
@@ -82,7 +88,10 @@ class ProfileViewController: UIViewController,UIImagePickerControllerDelegate & 
         guard let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else{
             return
         }
-        imageProfile.image = image
+        profilePic.image = image
+        profilePic.layer.borderWidth = 2
+        profilePic.layer.borderColor = UIColor(named: "Rojo")?.cgColor
+        profilePic.layer.cornerRadius = profilePic.frame.height / 2.0
         
     }
 }
